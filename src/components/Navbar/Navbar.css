@@ -1,0 +1,43 @@
+.header-nav {
+    height: 100px;
+    background-image: linear-gradient(180deg,#072641,#001c35);
+    display: flex;
+    justify-content: flex-start;
+}
+
+.nfhs-logo {
+    margin-bottom: 5px;
+    margin-right: 0;
+    margin-left: 24px;
+}
+.nfhs-logo img {
+    margin-top: 18px;
+    width: 41px;
+    height: 59px;
+}
+
+.watch-live-link, .watch-live-link:visited {
+    font-family: Montserrat;
+    text-decoration: none;
+    margin-top: 50px;
+    margin-left: 24px;
+    color: #fff;
+}
+
+.watch-live-link span {
+    height: 17px;
+    padding: 2px 5px;
+    font-size: 10px;
+    font-weight: 700;
+    background: #e51937;
+    border-radius: 2px;
+    margin-left: 8px;
+}
+
+.browse-link {
+    font-family: Montserrat;
+    text-decoration: none;
+    margin-top: 50px;
+    margin-left: 24px;
+    color: #fff;
+}
