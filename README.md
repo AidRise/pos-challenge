@@ -8,7 +8,7 @@ This project was created with:
 ## How to run project
 
 **Yarn is required to run project**
-- You can install Yarn with `npm install -g yarn` or visit [Yarn] (https://yarnpkg.com/getting-started) website for more details
+- You can install Yarn with `npm install -g yarn` or visit [Yarn](https://yarnpkg.com/getting-started) website for more details
 
 1. Clone the repository to your local compouter
 `git clone https://github.com/AidRise/pos-challenge.git`
