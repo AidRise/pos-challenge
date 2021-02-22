@@ -14,6 +14,13 @@ const Navbar = () => {
                 <span>150 LIVE</span>
             </a>
             <a href="#" className="browse-link">Browse</a>
+            <button className="nav-mobile"></button>
+            <div className="search">
+                <input type="text" placeholder="Find your school, event, association..." id="nav-search" />
+                <div id="nav-search-icon">
+
+                </div>
+            </div>
         </header>
     );
 }

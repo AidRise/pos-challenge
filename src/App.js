@@ -1,45 +1,65 @@
 import React, { useState } from "react";
 
 import Navbar from "./components/Navbar"
-import StateAssocation from "./components/StateAssocation";
+import StateAssociation from "./components/StateAssociation";
 import DateRangePicker from "./components/DateRangePicker";
 import DataTable from "./components/DataTable";
-import ClearFilter from "./components/ClearFilter"
+import ClearFilter from "./components/ClearFilter";
+import MobileFilter from "./components/MobileFilter";
 
 import "./App.css";
 
 function App() {
 
-  const [stateAssocation, setStateAssocation] = useState("GHSA");
+  const [stateAssociation, setStateAssociation] = useState("GHSA");
   const [startDate, setStartDate] = useState("");
   const [endDate, setEndDate] = useState("");
+  const [filterVisible, setFilterVisible] = useState(false);
 
-  console.log(startDate, endDate)
   return (
     <div className="App">
       <Navbar />
       <div className="events-header">
         <h3 className="events-header-title">Upcoming Events</h3>
         <div className="events-header-filter">
-          <StateAssocation
-            stateAssocation={stateAssocation}
-            setStateAssocation={setStateAssocation}
-          />
-          <DateRangePicker
-            startDate={startDate}
-            setStartDate={setStartDate}
-            endDate={endDate}
-            setEndDate={setEndDate}
-          />
-          <ClearFilter
-            setStateAssocation={setStateAssocation}
-            setStartDate={setStartDate}
-            setEndDate={setEndDate}
-          />
+          <div className="desktop-filters">
+            <StateAssociation
+              stateAssociation={stateAssociation}
+              setStateAssociation={setStateAssociation}
+            />
+            <DateRangePicker
+              startDate={startDate}
+              setStartDate={setStartDate}
+              endDate={endDate}
+              setEndDate={setEndDate}
+            />
+            <ClearFilter
+              setStateAssociation={setStateAssociation}
+              setStartDate={setStartDate}
+              setEndDate={setEndDate}
+            />
+          </div>
+          <div className="mobile-filters">
+            <div className="mobile-filters-button" onClick={() => {
+              setFilterVisible(true);
+            }}>
+              <span>FILTER</span>
+            </div>
+            <MobileFilter
+              stateAssociation={stateAssociation}
+              setStateAssociation={setStateAssociation}
+              startDate={startDate}
+              setStartDate={setStartDate}
+              endDate={endDate}
+              setEndDate={setEndDate}
+              filterVisible={filterVisible}
+              setFilterVisible={setFilterVisible}
+            />
+          </div>
         </div>
       </div>
       <DataTable
-        stateAssocation={stateAssocation}
+        stateAssociation={stateAssociation}
         startDate={startDate}
         endDate={endDate}
       />

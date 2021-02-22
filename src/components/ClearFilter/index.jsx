@@ -1,12 +1,18 @@
 import React from "react";
+import "./ClearFilter.css"
 
-const ClearFilter = ({ setStateAssocation, setStartDate, setEndDate}) => {
+const ClearFilter = ({ setStateAssociation, setStartDate, setEndDate}) => {
     return (
-        <button onClick={() => {
-            setStateAssocation("GHSA");
-            setStartDate("");
-            setEndDate("");
-        }}>Clear Filter</button>
+        <div className="desktop-clear-filter">
+            <span
+                id="clear-filter-button"
+                onClick={() => {
+                    setStateAssociation("GHSA");
+                    setStartDate("");
+                    setEndDate("");
+                }}
+            >CLEAR ALL</span>
+        </div>
     );
 }
 

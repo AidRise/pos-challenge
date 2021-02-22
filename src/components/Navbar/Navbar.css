@@ -18,6 +18,7 @@
 
 .watch-live-link, .watch-live-link:visited {
     font-family: Montserrat;
+    font-weight: 500;
     text-decoration: none;
     margin-top: 50px;
     margin-left: 24px;
@@ -36,8 +37,105 @@
 
 .browse-link {
     font-family: Montserrat;
+    font-weight: 500;
     text-decoration: none;
     margin-top: 50px;
     margin-left: 24px;
     color: #fff;
+}
+
+.nav-mobile {
+    display: inline-block;
+    position: relative;
+    width: 24px;
+    min-width: 24px;
+    height: 24px;
+    background: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCI+PHBhdGggZmlsbD0iI2ZmZiIgZmlsbC1ydWxlPSJldmVub2RkIiBkPSJNMiAzdjNoMjBWM0gyem0wIDcuNXYzaDIwdi0zSDJ6TTIgMTh2M2gyMHYtM0gyeiIvPjwvc3ZnPg==) 50% no-repeat;
+    border: none;
+    border-radius: 0;
+    padding: 0;
+    background: none;
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+
+.search {
+    height: 18px;
+    width: 40%;
+    position: relative;
+}
+
+#nav-search {
+    padding: 5px 0 7px;
+    margin: 48px 0px 0 20px;
+    background-color: transparent;
+    height: 18px;
+    width: 100%;
+    color: #fff;
+    font-family: Montserrat,sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    border-radius: 0;
+    border: none;
+    border-bottom: 1px solid #0e75d2;
+    outline: none;
+}
+
+#nav-search-icon {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    top: 42px;
+    right: -5px;
+    -o-object-fit: contain;
+    object-fit: contain;
+    background: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCI+PHBhdGggZmlsbD0iI2ZmZiIgb3BhY2l0eT0iLjMiIGZpbGwtcnVsZT0iZXZlbm9kZCIgZD0iTTEwLjE3OSAzQTcuMTc0IDcuMTc0IDAgMDAzIDEwLjE3OWE3LjE3NCA3LjE3NCAwIDAwNy4xNzkgNy4xNzkgNy4xMyA3LjEzIDAgMDAzLjg0LTEuMTIybDUuMTg2IDUuMTg2TDIxIDE5LjYyOGwtNS4xMi01LjEwN2E3LjEyOSA3LjEyOSAwIDAwMS40NzgtNC4zNDJBNy4xNzQgNy4xNzQgMCAwMDEwLjE3OCAzem0wIDIuMTc5YzIuNzY5IDAgNSAyLjIzMSA1IDVzLTIuMjMxIDUtNSA1YTQuOTkgNC45OSAwIDAxLTUtNWMwLTIuNzY5IDIuMjMxLTUgNS01eiIvPjwvc3ZnPg==) 50% no-repeat!important;
+}
+
+@media (max-width: 545px) {
+    .search {
+        height: 18px;
+        width: 50%;
+    }
+    
+    #nav-search-icon {
+        display: none;
+    }
+}
+
+@media (max-width: 992px) {
+    .header-nav {
+        height: 50px;
+    }
+
+    .nfhs-logo {
+        margin-left: 10px;
+    }
+
+    .nfhs-logo img {
+        margin-top: 5px;
+        width: 30px;
+        height: 45px;
+    }
+
+    .search {
+        height: 18px;
+        width: 60%;
+    }
+
+    #nav-search {
+        margin: 20px;
+    }
+
+    #nav-search-icon {
+        top: 15px;
+    }
+
+    .watch-live-link, .browse-link{
+        display: none;
+    }
+
+    .nav-mobile {
+        margin: 12px;
+        background: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCI+PHBhdGggZmlsbD0iI2ZmZiIgZmlsbC1ydWxlPSJldmVub2RkIiBkPSJNMiAzdjNoMjBWM0gyem0wIDcuNXYzaDIwdi0zSDJ6TTIgMTh2M2gyMHYtM0gyeiIvPjwvc3ZnPg==) 50% no-repeat; 
+    }
 }

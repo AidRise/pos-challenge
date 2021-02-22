@@ -6,10 +6,6 @@
   background-color: #04111c;
 }
 
-/* .content-wrapper {
-  background-color: #04111c;
-} */
-
 .events-header {
   display: flex;
   flex-direction: column;
@@ -29,4 +25,35 @@
   margin-top: 20px;
   display: flex;
   justify-content: center;
+}
+
+.desktop-filters {
+  display: none;
+}
+
+.mobile-filters-button {
+  font-family: Montserrat;
+  color: #fff;
+  background: #00529b;
+  padding: 10px 15px 10px 15px;
+  border-radius: 3px;
+  height: 40px;
+  right: 0;
+  bottom: 28px;
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+@media (min-width: 545px ) {
+    .desktop-filters {
+      margin-top: 20px;
+      display: flex;
+      justify-content: center;
+  }
+
+  .mobile-filters-button {
+    display: none;
+  }
 }

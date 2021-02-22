@@ -1,0 +1,9 @@
+.desktop-clear-filter {
+    padding-top: 20px;
+    cursor: pointer; 
+}
+
+#clear-filter-button {
+    padding: 5px;
+    cursor: pointer;
+}

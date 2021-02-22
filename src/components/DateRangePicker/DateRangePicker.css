@@ -1,3 +1,5 @@
+/* Important properties only to overwrite Material-UI styles */
+
 .MuiInput-underline::before {
     border-bottom: 1px solid #0e75d2 !important;
 }
@@ -16,4 +18,15 @@
 
 .MuiInputBase-input::-webkit-calendar-picker-indicator {
     filter: invert(1);
+}
+
+@media (max-width: 545px) {
+    .DateRangePicker {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .MuiTextField-root {
+        margin-top: 50px !important;
+    }
 }

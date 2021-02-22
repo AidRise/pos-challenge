@@ -1,0 +1,43 @@
+.stat-Association-wrapper {
+    display: flex;
+    flex-direction: column;
+}
+
+.MuiInput-root {
+    color: #fff !important;
+    font-family: Montserrat !important;
+    font-size: 16px !important;
+    font-weight: 500 !important;
+    margin: 4px 10px;
+}
+
+#state-Association-label {
+    padding: 0;
+    font-size: .78rem !important;
+    font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+    font-weight: 400;
+    line-height: 1;
+    letter-spacing: 0.00938em;
+}
+
+.MuiFormControl-root {
+    margin: 0 9px !important;
+}
+
+.MuiSelect-icon {
+    color: #0080da !important;
+}
+
+.MuiMenu-list {
+    background-color: #00264c;
+    color: #fff;
+}
+
+.state-Association-dropdown::before {
+    border-bottom: 1px solid  #0e75d2 !important;
+}
+
+.state-Association-dropdown::after {
+    border-bottom: 1px solid  #0e75d2 !important;
+}
+
